@@ -148,7 +148,6 @@ header::before{
     position: relative;
 }
 
-
 .appearInfo:hover .dropOne{
     pointer-events: all;
     opacity: 1;
@@ -808,7 +807,7 @@ footer{
     height: 17px;
 }
 
-.footer_link_images img{
+.footer_link_images a img{
     width: 20px !important;
     position: absolute;
 }
@@ -818,12 +817,12 @@ footer{
     position: relative;
 }
 
-.footer_link_images img:nth-child(1){
-    left: 0;
+.footer_link_images a:nth-child(1) img{
+    left: 0 !important;
 }
 
-.footer_link_images img:nth-child(2){
-    right: 0;
+.footer_link_images a:nth-child(2) img{
+    right: 0 !important;
 }
 
 .footer_inner4 li{
@@ -836,7 +835,7 @@ footer{
 
 .footer_right{
     display: flex;
-    align-items: center;
+    padding-top: 50px;
     justify-content: space-around;
 }
 
@@ -854,4 +853,395 @@ footer{
     text-decoration: none;
     font-size: 19px;
     color: #0C184D;
+}
+
+
+/* Адаптивка */
+
+
+@media screen and (max-width: 1685px){
+
+    .piece_card_content a{
+        padding-bottom: 7px;
+    }
+    
+    .pieces_block{
+        height: 680px;
+    }
+    
+    .main_picture{
+        width: 1600px;
+    }
+    
+    .theatre_block_content_inside_right{
+        padding-top: 0px;
+    }
+
+    .ticket_content span{
+        font-size: 65px;
+    }
+
+    .ticket_image_one{
+        width: 1600px;
+    }
+    
+    .ticket_image_two{
+        bottom: -60%;
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1568px){
+
+    .footer_inner2{
+        width: 18%;
+    }
+
+    .ticket_content span{
+        font-size: 60px;
+    }
+
+    .ticket_image_one{
+        width: 1500px;
+    }
+
+    .theatre_block_image{
+        top: -20%;
+        right: 0;
+        width: 1700px;
+    }
+
+    .piece_card_header div h2{
+        font-size: 45px;
+    }
+
+    .main_picture{
+        width: 1500px;
+    }
+
+    .pieces_block,
+    .people_block{
+        height: 620px;
+    }
+
+    .piece_card_header{
+        height: 70%;
+    }
+
+    .piece_card_content{
+        height: 30%;
+    }
+
+    .piece_card:hover .piece_card_header{
+        top: -10%;
+    }
+}
+
+@media screen and (max-width: 1550px){
+
+    .navbar_links span:nth-child(2) li a{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1530px){
+
+    .people_block{
+        height: 660px;
+    }
+}
+
+@media screen and (max-width: 1475px){
+
+    .footer_inner3{
+        width: 25%;
+    }
+
+    .theatre_block_content_inside_right h2{
+        font-size: 70px;
+        margin-top: 15px;
+    }
+
+    .main_picture{
+        width: 1400px;
+    }
+
+    .navbar_links span:nth-child(2) li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1450px){
+
+    .theatre_block_image{
+        width: 1600px;
+    }
+
+    .ticket_content span{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1432px){
+
+    .piece_card_header div h4{
+        font-size: 25px;
+    }
+
+    .theatre_block{
+        margin-bottom: 100px;
+    }
+
+    header{
+        height: 600px;
+    }
+
+    .header_title{
+        top: 46%;
+    }
+
+    .ticket_image_two{
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+    .navbar{
+        width: 90%;
+        top: 8%;
+        left: 5%;
+    }
+
+    .footer_inner li a{
+        font-size: 14px;
+    }
+
+    .ticket_block{
+        height: 300px;
+        margin-top: 170px;
+    }
+
+    .piece_card_header div h2{
+        font-size: 40px;
+    }
+
+    .main_banner h2{
+        font-size: 75px;
+    }
+
+    .people_block{
+        height: 610px;
+    }
+
+    .piece_card_header{
+        height: 65%;
+    }
+
+    .piece_card_content{
+        height: 35%;
+    }
+
+    .piece_card:hover .piece_card_header{
+        height: 75%;
+        top: -10%;
+    }
+
+    .main_picture{
+        width: 1350px;
+    }
+
+    .ticket_image_two{
+        top: -65%;
+        width: 850px;
+    }
+
+    .theatre_block_content_inside_right p{
+        font-size: 18px;
+    }
+
+    .pieces_block{
+        height: 560px;
+    }
+
+    .main_banner{
+        height: 430px;
+        margin: 90px auto;
+    }
+
+    .theatre_block_content_inside_right h2{
+        font-size: 55px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .theatre_block_content_inside_right p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .theatre_block{
+        height: 450px;
+    }
+
+    .theatre_block_image{
+        width: 1400px;
+    }
+
+    .theatre_block_content_inside_right{
+        padding-left: 40px;
+    }
+
+    .main_banner h2{
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 1325px){
+
+    .navbar_links span:nth-child(2) li a{
+        font-size: 14px;
+    }
+
+    .navbar_links span:nth-child(1) button{
+        font-size: 16px;
+        padding: 5px 7px;
+    }
+
+    .appearInfoTwo div{
+        left: -10px;
+        width: 145%;
+    }
+
+    .header_title h2{
+        font-size: 65px;
+    }
+
+    .header_title{
+        top: 50%;
+    }
+
+    .main_picture{
+        width: 1280px;
+    }
+
+    .main_title span{
+        font-size: 35px;
+    }
+
+    .main_title p{
+        font-size: 20px;
+    }
+
+    .footer_inner li a{
+        font-size: 13px;
+    }
+
+    .footer_inner4 li a img{
+        width: 130px;
+    }
+
+    .footer_right{
+        padding-top: 45px;
+    }
+
+    .footer_right ul li a{
+        font-size: 16px;
+    }
+
+    .places_block{
+        height: 300px;
+    }
+
+    .ticket_image_two{
+        top: -55%;
+        width: 750px;
+    }
+
+    .ticket_image_one{
+        width: 1300px;
+    }
+
+    .ticket_block{
+        height: 270px;
+        margin-top: 170px;
+    }
+
+    .ticket_content p{
+        font-size: 19px;
+    }
+
+    .people_block{
+        height: 600px;
+        margin-top: 90px;
+    }
+
+    .theatre_block_content_inside_right a{
+        font-size: 30px;
+    }
+
+    .navbar{
+        top: 5%;
+    }
+
+    header{
+        height: 550px;
+    }
+
+    .piece_card_header div h2{
+        font-size: 35px;
+    }
+
+    .piece_card_header div h4{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1275px){
+
+    .places_card div span{
+        font-size: 20px;
+    }
+
+    .main_title span{
+        font-size: 32px;
+    }
+
+    .main_title p{
+        font-size: 18px;
+    }
+
+    .piece_card_content p{
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .piece_card_content{
+        padding: 15px;
+    }
+
+    .main_banner h2{
+        font-size: 60px;
+    }
+
+    .main_banner{
+        height: 400px;
+    }
+
+    .theatre_block_content_inside_right a{
+        font-size: 27px;
+    }
+
+    .theatre_block_content_inside_right p{
+        font-size: 14px;
+    }
+
+    .theatre_block_content_inside_right h2{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .ticket_content p{
+        font-size: 17px;
+    }
 }
