@@ -232,6 +232,8 @@ header::before{
     position: absolute;
 }
 
+
+
 /* main */
 
 main{
@@ -2317,12 +2319,12 @@ footer{
 
     .burger_title{
         height: 22%;
+        width: 100%;
     }
 
     .burger_inside{
         height: 78%;
     }
-
 
     .header_title{
         width: 80%;
@@ -2507,6 +2509,15 @@ footer{
     .main_picture{
         width: 450px;
     }
+
+    .footer_inner4 li a img{
+        width: 180px;
+    }
+
+    .footer_inner3 div span a img{
+        width: 50px;
+        height: 20px;
+    }
 }
 
 @media screen and (max-width: 420px){
@@ -2573,15 +2584,6 @@ footer{
 
     .footer_inner4{
         width: 100%;
-    }
-    
-    .footer_inner4 li a img{
-        width: 180px;
-    }
-
-    .footer_inner3 div span a img{
-        width: 50px;
-        height: 20px;
     }
 }
 
