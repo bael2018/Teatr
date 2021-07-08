@@ -608,7 +608,6 @@ main{
 
 .ticket_block{
     width: 100%;
-    overflow: hidden;
     background: #0C184D;
     margin-top: 150px;
     height: 350px;
@@ -1952,6 +1951,7 @@ footer{
 
     .ticket_block{
         height: 160px;
+        overflow: hidden;
     }
 
     .ticket_image_one{
