@@ -11,22 +11,32 @@
 </head>
 <body>
     <header>
+        <section class="burger_menu">
+            <div class="burgerCloseBtn"><i class="fas fa-times"></i></div>
+        </section>
+
         <section class="navbar">
-            <ul>
+            <ul class="navbar_header">
                 <li>
                     <a href="#">
                         <img src="img/logo full horiz apsny theatre _-34 1 (1) — копия.png" alt="logo">
                     </a>
                 </li>
+                <li>
+                    <button class="langButtonOne navbarButton">абх</button>
+                    <button class="activeLanguage langButtonTwo navbarButton">русс</button>
+                    <button class="burgerButtonAnother"><i class="fas fa-bars"></i></button>
+                </li>
             </ul>
             <ul class="navbar_links">
                 <span>
-                    <button class="langButtonOne">абх</button>
-                    <button class="activeLanguage langButtonTwo">русс</button>
+                    <button class="langButtonOne navbarButton">абх</button>
+                    <button class="activeLanguage langButtonTwo navbarButton">русс</button>
                     <label>
                         <input type="text">
                         <i class="fas fa-search"></i>
                     </label>
+                    <button class="burgerButton burgerButtonNone"><i class="fas fa-bars"></i></button>
                 </span>
                 <span>
                     <li><a href="#">о нас</a></li>
@@ -344,7 +354,7 @@
                 <li>
                     <img src="img/18764668-05.png" alt="image">
                     <a href="#">
-                        +79407214214
+                        +7(940) 7-214-214
                         пн-пт
                         11:00 - 19:00
                     </a>
@@ -462,6 +472,78 @@
             loop: true,
             autoplay: true,
         });
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:1250px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:1100px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+        
+        if(matchMedia){
+        var screen = matchMedia('(max-width:850px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:500px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
     </script>
 
     <script>
@@ -471,6 +553,60 @@
             loop: true,
             autoplay: true,
         });
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:1250px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiperTwo", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:850px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiperTwo", {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:500px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiperTwo", {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
     </script>
 
     <script>
@@ -480,6 +616,79 @@
             loop: true,
             autoplay: true,
         });
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:1250px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiperThree", {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:1000px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiperThree", {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:830px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiperThree", {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:500px)')
+        screen.addListener(changes)
+        changes(screen)
+        }
+            function changes(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiperThree", {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
     </script>
+    
 </body>
 </html>

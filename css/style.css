@@ -24,6 +24,10 @@ header::before{
 
 /* navbar */
 
+.burger_menu{
+    display: none;
+}
+
 .navbar{
     width: 85%;
     top: 8%;
@@ -32,6 +36,7 @@ header::before{
     justify-content: space-between;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     height: 75px;
 }
 
@@ -102,6 +107,9 @@ header::before{
     width: 100%;
 }
 
+.burgerButtonAnother,
+.burgerButton,
+.navbarButton,
 .navbar_links span:nth-child(1) button{
     background: none;
     outline: none;
@@ -120,6 +128,7 @@ header::before{
     color: white;
     outline: none;
 }
+
 .navbar_links span:nth-child(1) label i{
     color: white;
     width: 10%;
@@ -172,6 +181,10 @@ header::before{
     margin-bottom: 4px;
     cursor: pointer;
     color: white;
+}
+
+.burgerButton{
+    display: none !important;
 }
 
 .appearInfo div p:nth-child(1){
@@ -339,6 +352,10 @@ main{
     width: 1800px;
 }
 
+.burgerButton{
+    display: block !;
+}
+
 .theatre_block_content_inside{
     width: 85%;
     position: relative;
@@ -346,6 +363,7 @@ main{
     justify-content: space-between;
     display: flex;
     margin: 0 auto;
+    flex-wrap: wrap;
     padding: 40px 0;
     box-sizing: border-box;
 }
@@ -474,6 +492,10 @@ main{
     background: url('../img/URY_8409\ \(1\)\ 1.png') center / cover;
 }
 
+.navbar_header li button{
+    display: none;
+}
+
 .piece_card_content{
     position: absolute;
     height: 25%;
@@ -586,6 +608,7 @@ main{
 
 .ticket_block{
     width: 100%;
+    overflow: hidden;
     background: #0C184D;
     margin-top: 150px;
     height: 350px;
@@ -729,21 +752,15 @@ main{
 footer{
     justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 120px;
 }
 
 .footer_left{
     width: 70%;
     background: #0C184D;
-}
-
-.footer_right{
-    width: 30%;
-    background: rgba(61, 85, 173, 0.49);
-}
-
-.footer_left{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
     align-items: flex-start;
@@ -834,9 +851,12 @@ footer{
 }
 
 .footer_right{
+    width: 30%;
+    background: rgba(61, 85, 173, 0.49);
     display: flex;
     padding-top: 50px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer_right ul{
@@ -1243,5 +1263,1226 @@ footer{
 
     .ticket_content p{
         font-size: 17px;
+    }
+
+    .ticket_block{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+
+    .ticket_content span{
+        font-size: 45px;
+    }
+
+    .theatre_block_content_inside_right h2{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .pieces_block{
+        margin-top: 100px;
+    }
+
+    .navbar_links span:nth-child(2) li a{
+        font-size: 13px;
+    }
+
+    .appearInfo div p{
+        font-size: 13px;
+    }
+
+    .appearInfo div{
+        bottom: -60px;
+    }
+
+    .navbar ul:nth-child(1) li a img{
+        width: 210px;
+    }
+
+    .main_picture{
+        width: 1200px;
+    }
+
+    .main_banner{
+        height: 370px;
+    }
+
+    .footer_left{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    .ticket_image_two{
+        width: 700px;
+    }
+
+    .ticket_block{
+        margin-top: 70px;
+    }
+
+    header{
+        height: 520px;
+    }
+
+    .header_title h2{
+        font-size: 60px;
+    }
+
+    .header_title a{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+
+    .main_picture{
+        width: 1100px;
+    }
+
+    .main_banner{
+        height: 340px;
+    }
+
+    .main_banner h2{
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    .main_banner a{
+        font-size: 25px;
+    }
+
+    .ticket_image_two{
+        width: 650px;
+        top: -60%;
+    }
+
+    .ticket_image_one{
+        width: 1200px;
+    }
+
+    .ticket_block{
+        height: 240px;
+    }
+
+    .footer_logo{
+        width: 170px;
+    }
+
+    .people_block{
+        height: 550px;
+    }
+
+    .navbarButton,
+    .navbar_links span:nth-child(1) button{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1132px){
+
+    .navbar_links span:nth-child(2) li a{
+        font-size: 12px;
+    }
+    
+    .main_banner{
+        margin-top: 50px;
+    }
+
+    .ticket_content span{
+        font-size: 40px;
+    }
+
+    .main_picture{
+        width: 1050px;
+    }
+
+    .header_title h2{
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+
+    .theatre_block_content_inside_right p{
+        font-size: 13px;
+    }
+
+    .theatre_block_content_inside_right h2{
+        margin-top: 20px;
+    }
+    
+    .theatre_block_image{
+        width: 1300px;
+    }
+
+    .piece_card_header div h2{
+        font-size: 32px;
+    }
+
+    .footer_left{
+        width: 100%;
+    }
+    
+    .footer_right{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    
+    .footer_right ul{
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header{
+        height: 500px;
+    }
+    
+    .navbar_links span:nth-child(2){
+        display: none;
+    }
+
+    .navbar ul:nth-child(1){
+        width: 22%;
+        margin-top: 0px;
+    }
+    
+    .burgerButton{
+        display: block !important;
+        transition: .3s;
+        margin-left: 20px !important;
+    }
+
+    .burgerButton i{
+        font-size: 30px;
+    }
+
+    .navbar_links span:nth-child(1){
+        align-items: center;
+    }
+
+    .burger_menu.activeBurger{
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    .burger_menu{
+        position: fixed;
+        left: 0;
+        display: block;
+        padding: 40px;
+        overflow: hidden;
+        box-sizing: border-box;
+        z-index: 20;
+        transition: .3s;
+        opacity: 0;
+        pointer-events: none;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .burger_menu p{
+        color: white;
+    }
+
+    .burgerCloseBtn{
+        position: absolute;
+        right: 62px;
+        z-index: 2;
+        top: 35px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .burger_menu.activeClose{
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .ticket_image_one{
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .ticket_image_one{
+        width: 1000px;
+    }
+
+    .ticket_image_two{
+        width: 600px;
+        top: -55%;
+    }
+
+    .ticket_content span{
+        font-size: 37px;
+    }
+
+    .main_banner{
+        height: 300px;
+    }
+
+    .main_banner h2{
+        font-size: 49px;
+        margin-bottom: 20px;
+    }
+
+    .main_picture{
+        width: 950px;
+    }
+
+    .theatre_block_content_inside_left{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .theatre_block_content_inside_right{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .theatre_block{
+        height: 680px;
+    }
+
+    .theatre_block_content_inside_right p{
+        font-size: 14px;
+    }
+
+    .theatre_block_content_inside_right a::before{
+        width: 16%;
+    }
+
+    .theatre_block_image{
+        width: 1700px;
+        top: -10%;
+    }
+
+    .theatre_block_content_inside_right h2{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    
+    .ticket_image_one{
+        width: 900px;
+    }
+
+    .ticket_image_two{
+        width: 550px;
+        top: -50%;
+    }
+
+    .ticket_content,
+    .theatre_block_content_inside,
+    .main_banner,
+    .main_title{
+        width: 90%;
+    }
+
+    .piece_card_header div{
+        padding: 20px;
+    }
+
+    .main_picture{
+        width: 850px;
+    }
+
+    header{
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 870px){
+
+    .ticket_content span{
+        font-size: 34px;
+    }
+
+    .main_title span{
+        font-size: 27px;
+    }
+
+    .main_title p{
+        font-size: 16px;
+    }
+
+    .places_block{
+        height: 270px;
+    }
+
+    .places_card div span{
+        font-size: 18px;
+    }
+
+    .places_card div{
+        bottom: 40px;
+    }
+
+    .piece_card_header div h2{
+        font-size: 29px;
+    }
+
+    .ticket_block{
+        height: 200px;
+    }
+
+    .ticket_content span{
+        font-size: 30px;
+    }
+
+    .ticket_content p{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .ticket_image_one{
+        width: 850px;
+    }
+
+    .ticket_image_two{
+        width: 500px;
+        top: -50%;
+    }
+
+    .header_title h2{
+        font-size: 50px;
+    }
+    
+    .header_title a{
+        font-size: 22px;
+    }
+
+    .main_banner{
+        height: 280px;
+    }
+
+    .main_banner h2{
+        font-size: 45px;
+    }
+
+    .main_banner a{
+        font-size: 23px;
+    }
+
+    .pieces_block,
+    .people_block{
+        height: 500px;
+    }
+
+    header{
+        height: 460px;
+    }
+
+    .theatre_block_content_inside_right h2{
+        font-size: 45px;
+        margin-top: 0px;
+    }
+
+    .theatre_block{
+        height: 620px;
+    }
+
+    .theatre_block_content_inside_right a{
+        font-size: 24px;
+    }
+
+    .theatre_block_content_inside_left{
+        height: 270px;
+    }
+
+    .theatre_block_image{
+        width: 1500px;
+        top: -10%;
+    }
+}
+
+@media screen and (max-width: 830px){
+
+    .main_picture{
+        width: 800px;
+    }
+
+    .navbar ul:nth-child(1) li a img{
+        width: 180px;
+    }
+
+    .piece_card_content a{
+        font-size: 15px;
+    }
+
+    .main_banner{
+        height: 270px;
+    }
+
+    .main_banner h2{
+        font-size: 42px;
+    }
+
+    .footer_left ul{
+        width: 40%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer_left ul li{
+        text-align: center;
+    }
+    
+   .footer_inner3 li{
+       padding-left: 70px;
+   }
+
+   .footer_inner3 div{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_left{
+        padding-bottom: 20px;
+    }
+
+    .footer_right ul{
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .footer_right ul li{
+        width: 25%;
+        text-align: center;
+    }
+
+    .footer_right{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .theatre_block_content_inside_right a::before{
+        width: 17%;
+    }
+
+    .footer_inner3 li{
+        padding-left: 60px;
+    }
+
+    .main_picture{
+        width: 770px;
+    }
+
+    .pieces_block{
+        margin-top: 70px;
+    }
+
+    .ticket_image_one{
+        width: 750px;
+    }
+
+    .ticket_image_two{
+        width: 470px;
+        top: -50%;
+    }
+
+    .ticket_block{
+        height: 180px;
+    }
+
+    .main_banner{
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .theatre_block{
+        margin-top: 120px;
+    }
+
+    .piece_card_header div h2{
+        font-size: 32px;
+    }
+
+    .theatre_block_content_inside_right h2{
+        margin-bottom: 0px;
+    }
+
+    .header_title h2{
+        font-size: 45px;
+    }
+        
+    .header_title a{
+        font-size: 20px;
+    }
+
+    header{
+        height: 430px;
+    }
+
+    .pieces_block,
+    .people_block{
+        height: 460px;
+    }
+
+    .ticket_content p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .theatre_block_content_inside_right a::before{
+        width: 18%;
+    }
+
+    .theatre_block_content_inside_left{
+        height: 270px;
+    }
+
+    .navbar_links span:nth-child(1) label{
+        width: 250px;
+    }
+    
+    .navbar_links span:nth-child(1) label input{
+        width: 85% !important;
+    }
+
+    .main_picture{
+        width: 750px;
+    }
+
+    .footer_inner3 li{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .theatre_block_content_inside_right a::before{
+        width: 19%;
+    }
+
+    .footer_inner3 li{
+        padding-left: 40px;
+    }
+
+    .ticket_content span{
+        font-size: 27px;
+    }
+
+    .ticket_image_one{
+        width: 670px;
+    }
+
+    .ticket_image_two{
+        width: 430px;
+        top: -50%;
+    }
+
+    .main_picture{
+        width: 650px;
+    }
+
+    .navbar_links span:nth-child(1) label{
+        width: 200px;
+    }
+
+    .main_title span{
+        font-size: 25px;
+    }
+
+    .main_title p{
+        font-size: 15px;
+    }
+
+    .burgerCloseBtn{
+        right: 48px;
+        top: 30px;
+        font-size: 40px;
+    }
+
+    .theatre_block_content_inside_left{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 670px){
+
+    .header_title h2{
+        font-size: 40px;
+    }
+        
+    .header_title a{
+        font-size: 18px;
+    }
+
+    .main_picture{
+        width: 620px;
+    }
+    
+    .main_banner{
+        height: 230px;
+    }
+
+    .main_banner h2{
+        font-size: 37px;
+        margin-bottom: 15px;
+    }
+
+    .main_banner a{
+        font-size: 19px;
+    }
+
+    .piece_card_header div h2{
+        font-size: 30px;
+    }
+
+    .ticket_block{
+        height: 160px;
+    }
+
+    .ticket_image_one{
+        width: 650px;
+    }
+
+    .ticket_image_two{
+        width: 400px;
+        top: -55%;
+    }
+
+    .footer_left ul{
+        width: 40%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .theatre_block_content_inside_right a::before{
+        width: 21%;
+    }
+
+    .navbar ul:nth-child(1) li a img{
+        width: 160px;
+    }
+    
+    .theatre_block_content_inside_left{
+        height: 230px;
+    }
+
+    .footer_inner3 li{
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    .ticket_image_one{
+        width: 550px;
+    }
+
+    .ticket_image_two{
+        width: 350px;
+        top: -45%;
+    }
+
+    .ticket_content span{
+        font-size: 27px;
+        width: 55%;
+    }
+
+    .theatre_block{
+        height: 570px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .navbar ul:nth-child(1) li a img{
+        width: 140px;
+        margin-top: 10px;
+    }
+
+    .places_block{
+        height: 250px;
+    }
+
+    .places_card div span{
+        font-size: 17px;
+    }
+
+    .main_title span{
+        font-size: 22px;
+    }
+
+    .main_title p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .ticket_content p{
+        font-size: 13px;
+        width: 60%;
+    }
+
+    .theatre_block_image{
+        width: 1350px;
+    }
+
+    .theatre_block{
+        margin: 70px 0;
+        margin-top: 100px;
+    }
+
+    .theatre_block_content_inside_right a::before{
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+    .theatre_block_content_inside_right a::before{
+        width: 23%;
+    }
+
+    .header_title h2{
+        font-size: 37px;
+    }
+        
+    .header_title a{
+        font-size: 16px;
+    }
+
+    .navbar ul{
+        width: 100%;
+    }
+
+    .navbar_links span:nth-child(1) label{
+        width: 100%;
+        margin-left: 0px;
+        padding-bottom: 15px;
+    }
+    
+    .navbar ul:nth-child(1) li a img{
+        width: 140px;
+    }
+
+    .navbar{
+        height: 65px;
+        top: 3%;
+    }
+
+    .navbar_header{
+        display: flex !important;
+        width: 100% !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .navbar_header li{
+        width: 50% !important; 
+    }
+
+    .navbar_header li:nth-child(2){
+        display: flex !important;
+        justify-content: flex-end !important;
+        position: relative !important;
+    }
+
+    .navbar_header li button{
+        display: block;
+        padding: 0 6px;
+    }
+
+    .navbar_links span button{
+        display: none;
+    }
+
+    .navbar_links span:nth-child(1) label input{
+        width: 88% !important;
+    }
+
+    .burgerButtonNone{
+        display: none !important;
+    }
+
+    .burgerButtonAnother{
+        font-size: 27px;
+        margin-top: 5px;
+    }
+
+    .header_title{
+        top: 51%;
+    }
+
+    .piece_card_header div h2{
+        font-size: 28px;
+    }
+
+    .piece_card_header div h4{
+        font-size: 19px;
+    }
+
+    .main_picture{
+        width: 590px;
+    }
+
+    .main_banner{
+        height: 210px;
+        margin-top: 50px;
+    }
+
+    .theatre_block_content_inside_right a::before{
+        width: 21%;
+    }
+
+    .theatre_block_content_inside_right a{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 570px){
+
+    .people_block{
+        height: 500px;
+    }
+
+    .footer_right ul li{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .swiper-slide{
+        transform: translateX(0px) !important;
+    }
+
+    .header_title{
+        top: 52%;
+    }
+
+    .header_title h2{
+        font-size: 34px;
+    }
+
+    .burgerCloseBtn{
+        right: 40px;
+        top: 28px;
+        font-size: 35px;
+    }
+
+    .theatre_block_content_inside_left{
+        height: 210px;
+    }
+
+    .ticket_image_one{
+        width: 500px;
+    }
+
+    .ticket_image_two{
+        width: 300px;
+        top: -30%;
+        right: -5%;
+    }
+    
+    .main_banner h2{
+        font-size: 34px;
+    }
+
+    .footer_inner3 li{
+        padding-left: 10px;
+    }
+
+    .people_block{
+        height: 450px;
+    }
+
+    .theatre_block_content_inside_right a::before{
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .header_title{
+        width: 80%;
+        left: 10%;
+    }
+
+    .theatre_block_content_inside_right a::before{
+        width: 23%;
+    }
+
+    .ticket_content span{
+        font-size: 25px;
+        width: 55%;
+    }
+
+    .ticket_content p{
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .piece_card_header div h2{
+        font-size: 26px;
+    }
+
+    .theatre_block_content_inside_right h2{
+        font-size: 40px;
+    }
+
+    .people_block{
+        height: 420px;
+    }
+
+    .people_block .piece_card_header{
+        height: 60%;
+    }
+
+    .people_block .piece_card_content{
+        height: 40%;
+    }
+
+    .pieces_block{
+        height: 410px;
+    }
+
+    .people_block .piece_card:hover .piece_card_header{
+        height: 75%;
+        top: -15%;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .ticket_content span{
+        font-size: 23px;
+        width: 55%;
+    }
+
+    .theatre_block_content_inside_left{
+        height: 190px;
+    }
+
+    .theatre_block{
+        height: 550px;
+    }
+
+    .main_picture{
+        width: 520px;
+    }
+
+    .header_title{
+        top: 53%;
+    }
+
+    .header_title h2{
+        font-size: 32px;
+    }
+
+    .navbar_header li button{
+        font-size: 13px;
+        padding: 5px 6px ;
+    }
+
+    .burgerButtonAnother{
+        margin-left: 10px;
+        font-size: 23px !important; 
+        padding: 0px !important;
+    }
+
+    .footer_left ul{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .places_block{
+        height: 230px;
+    }
+    
+    .theatre_block_content_inside_right a::before{
+        width: 26%;
+    }
+        
+    .main_banner h2{
+        font-size: 31px;
+    }
+
+    .theatre_block_content_inside_right p{
+        font-size: 13px;
+    }
+
+    .theatre_block{
+        height: 530px;
+    }
+
+    .ticket_image_two{
+        width: 270px;
+        top: -20%;
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
+    .footer_left{
+        padding: 30px;
+        padding-bottom: 0px;
+    }
+
+    .footer_right{
+        padding: 30px 0;
+        padding-bottom: 10px;
+    }
+
+    .theatre_block_image{
+        width: 1250px;
+    }
+
+    .main_banner{
+        height: 200px;
+        margin-top: 70px;
+    }
+
+    .main_picture{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+    .ticket_content span{
+        font-size: 21px;
+        width: 55%;
+    }
+
+    .footer_left ul{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer_left ul li{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .footer_inner3 li{
+        padding-left: 0px;
+    }
+    
+    .footer_inner3 div{
+        justify-content: flex-start;
+    }
+
+    .footer_right ul li a{
+        font-size: 15px;
+    }
+        
+    .theatre_block_content_inside_right a::before{
+        width: 27%;
+    }
+
+    .main_picture{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 420px){
+
+    .people_block{
+        height: 440px;
+    }
+}
+
+@media screen and (max-width: 416px){
+
+    .navbar_links span:nth-child(1) label input{
+        width: 87% !important;
+    }
+
+    .main_banner{
+        height: 190px;
+    }
+
+    .main_banner h2{
+        font-size: 29px;
+    }
+
+    .theatre_block_content_inside_right a::before{
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .ticket_content span{
+        font-size: 20px;
+        width: 57%;
+    }
+
+    .ticket_image_one{
+        width: 500px;
+    }
+
+    .ticket_image_two{
+        width: 250px;
+        top: -15%;
+    }
+
+    .theatre_block_content_inside_right a{
+        font-size: 19px;
+    }
+
+    .theatre_block_content_inside_left{
+        height: 175px;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .main_picture{
+        width: 430px;
+    }
+
+    .header_title h2{
+        font-size: 30px;
+    }
+
+    .people_block{
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    
+    .main_picture{
+        width: 410px;
+    }
+
+    .main_title p{
+        width: 90%;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 371px){
+
+    .ticket_content span{
+        font-size: 19px;
+        width: 57%;
     }
 }
