@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша</title>
+    <link rel="stylesheet" href="css/spectre.css">
+    <script src="https://kit.fontawesome.com/5c459b5eb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <img class="header_image" src="img/Безымянный-5-02 1.png" alt="image">
+        <section class="burger_menu">
+            <div class="burgerCloseBtn"><i class="fas fa-times"></i></div>
+
+            <div class="burger_container">
+                <div class="burger_content">
+                    <div class="burger_title">
+                        <img src="img/logo full horiz apsny theatre _-34 1 (1) — копия.png" alt="image">
+                    </div>
+                    <div class="burger_inside">
+                        <ul>
+                            <li>
+                                <a href="#">о нас</a>
+                            </li>
+                            <li>
+                                <a href="#">репертуар</a>
+                            </li>
+                            <li>
+                                <a href="#">люди театра</a>
+                            </li>
+                            <li class="burger_link_one">
+                                <a href="#">визит в театр</a>
+                                <span>
+                                    <p><a href="#">кафе</a></p>
+                                    <p><a href="#">магазин</a></p>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#">музей</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">радиотеатр</a>
+                            </li>
+                            <li>
+                                <a href="#">образование</a>
+                            </li>
+                            <li>
+                                <a href="#">партнеры</a>
+                            </li>
+                            <li class="burger_link_one">
+                                <a href="#">медиа</a>
+                                <span>
+                                    <p><a href="#">пресса</a></p>
+                                    <p><a href="#">новости</a></p>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#">контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="navbar">
+            <ul class="navbar_header">
+                <li>
+                    <a href="#">
+                        <img src="img/logo full horiz apsny theatre _-34 1 (1) — копия.png" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <button class="langButtonOne navbarButton">абх</button>
+                    <button class="activeLanguage langButtonTwo navbarButton">русс</button>
+                    <button class="burgerButtonAnother"><i class="fas fa-bars"></i></button>
+                </li>
+            </ul>
+            <ul class="navbar_links">
+                <span>
+                    <button class="langButtonOne navbarButton">абх</button>
+                    <button class="activeLanguage langButtonTwo navbarButton">русс</button>
+                    <label>
+                        <input type="text">
+                        <i class="fas fa-search"></i>
+                    </label>
+                    <button class="burgerButton burgerButtonNone"><i class="fas fa-bars"></i></button>
+                </span>
+                <span>
+                    <li><a href="#">о нас</a></li>
+                    <li><a href="#">репертуар</a></li>
+                    <li><a href="#">люди театра</a></li>
+                    <li class="appearInfo">
+                        <a href="#">визит в театр</a>
+                        <div class="dropOne">
+                            <p>кафе</p>
+                            <p>магазин</p>
+                        </div>
+                    </li>
+                    <li><a href="#">музей</a></li>
+                    <li><a href="#">радиотеатр</a></li>
+                    <li><a href="#">образование</a></li>
+                    <li><a href="#">партнеры</a></li>
+                    <li class="appearInfo appearInfoTwo">
+                        <a href="#">медиа</a>
+                        <div class="dropOne">
+                            <p>пресса</p>
+                            <p>новости</p>
+                        </div>
+                    </li>
+                    <li><a href="#">контакты</a></li>
+                </span>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section class="info">
+            <div class="info_inner">
+                <span><i class="fas fa-angle-left"></i> вернуться к списку</span>
+            </div>
+            <div class="info_body">
+                <div class="info_child">
+                    <div class="info_child_left">
+                        <div class="info_child_left_image_one"></div>
+                        <div class="info_child_left_image_inner info_child_left_image_two"></div>
+                        <div class="info_child_left_image_inner info_child_left_image_three"></div>
+                        <div class="info_child_left_image_inner info_child_left_image_four"></div>
+                    </div>
+
+                    <div class="info_child_right">
+                        <h3>19:00</h3>
+                        <h4>Режиссер В.Кове</h4>
+                        <h1>Название пьесы</h1>
+                        <h4 class="info_h4">Спектакль в 2-х актах</h4>
+                        <h5>Автор: И.А Фамилия</h5>
+                        <h5>Режиссер: И.А Фамилия</h5>
+                        <p>
+                            Это необычная военная история обычных людей, которые поют и танцуют, потому что уверены, война скоро закончится.Это необычная военная история обычных людей, которые поют и танцуют, потому что уверены, война скоро закончится
+                        </p>
+                        <a href="#">купить билет</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="actor_title">
+            <h3>актерский состав</h3>
+        </section>
+
+        <section class="actor_block">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="actor_card">
+                           <div class="actor_picture actor_picture_one">
+                               <h3>Имя Фамилия Отчество</h3>
+                           </div>
+                           <div class="actor_content">
+                               <h3>Главная роль</h3>
+                           </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="actor_card">
+                        <div class="actor_picture actor_picture_two">
+                            <h3>Имя Фамилия Отчество</h3>
+                        </div>
+                        <div class="actor_content">
+                            <h3>Главная роль</h3>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="actor_card">
+                        <div class="actor_picture actor_picture_three">
+                            <h3>Имя Фамилия Отчество</h3>
+                        </div>
+                        <div class="actor_content">
+                            <h3>Главная роль</h3>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="actor_card">
+                        <div class="actor_picture actor_picture_four">
+                            <h3>Имя Фамилия Отчество</h3>
+                        </div>
+                        <div class="actor_content">
+                            <h3>Главная роль</h3>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="actor_card">
+                        <div class="actor_picture actor_picture_five">
+                            <h3>Имя Фамилия Отчество</h3>
+                        </div>
+                        <div class="actor_content">
+                            <h3>Главная роль</h3>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="actor_card">
+                        <div class="actor_picture actor_picture_six">
+                            <h3>Имя Фамилия Отчество</h3>
+                        </div>
+                        <div class="actor_content">
+                            <h3>Главная роль</h3>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="actor_footer">
+            <h3>о постановке</h3>
+            <p>
+                Это необычная военная история обычных людей, которые поют и танцуют, потому что уверены, война скоро закончится.Это необычная военная история обычных людей, которые поют и танцуют, потому что уверены, война скоро закончится
+                Это необычная военная история обычных людей, которые поют и танцуют, потому что уверены, война скоро закончится.Это необычная военная история обычных людей, которые поют и танцуют, потому что уверены, война скоро закончится
+            </p>
+        </section>
+        
+        <div class="actor_inner">
+            <span><i class="fas fa-angle-left"></i> вернуться к списку</span>
+        </div>
+    </main> 
+
+    <footer>
+        <div class="footer_left">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img class="footer_logo" src="img/logo full horiz apsny theatre _-34 1 (1) — копия.png" alt="">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer_inner footer_inner2">
+                <li>
+                    <img src="img/18764668-04.png" alt="image">
+                    <a href="#">
+                        Р.Абхазия
+                        <br> 
+                        г. Сухум
+                        <br>
+                        улица Пушкина 1
+                    </a>
+                </li>
+                <li>
+                    <img src="img/18764668-05.png" alt="image">
+                    <a href="#">
+                        +7(940) 7-214-214
+                        <br>
+                        пн-пт
+                        11:00 - 19:00
+                    </a>
+                </li>
+            </ul>
+
+            <ul class=" footer_inner footer_inner3">
+                <li>
+                    <img src="img/18764668-03.png" alt="image">
+                    <a href="#">
+                        abkhaztheatre@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <img src="img/18764668-01.png" alt="image">
+                    <a href="#">
+                        @apsuatheatre
+                    </a>
+                </li>
+                <li>
+                    <img src="img/18764668-02.png" alt="image">
+                    <a href="#">
+                        @apsuatheatre
+                    </a>
+                </li>
+
+                <div>
+                    <span class="footer_link_images">
+                        <a href="#"><img src="img/Vector (2).png" alt="image"></a>
+                        <a href="#"><img src="img/Vector (1).png" alt="image"></a>
+                    </span>
+                    <span>
+                        <a href="#"><img src="img/Vector.png" alt="image"></a>
+                    </span>
+                    <span>
+                        <a href="#"><img src="img/Vector (3).png" alt="image"></a>
+                    </span>
+                </div>
+            </ul>
+
+            <ul class="footer_inner4">
+                <li>
+                    <a href="#">
+                        <img src="img/Векторный смарт-объект1-01 2.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/амобаил_лого (3)-01 1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/ллл-02 1.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer_right">
+            <ul>
+                <li>
+                    <a href="#">
+                        о нас
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        репертуар
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        люди театра
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        визит в театр
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        музей
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        радиотеатр
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        образование
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        партнеры
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/spectre.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5.5,
+            spaceBetween: 20,
+            loop: true,
+            speed: 1000,
+            autoplay: true,
+        });
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:1250px)')
+        screen.addListener(changesOne)
+        changesOne(screen)
+        }
+            function changesOne(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:1250px)')
+        screen.addListener(changesTwo)
+        changesTwo(screen)
+        }
+            function changesTwo(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:750px)')
+        screen.addListener(changesThree)
+        changesThree(screen)
+        }
+            function changesThree(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:550px)')
+        screen.addListener(changesFour)
+        changesFour(screen)
+        }
+            function changesFour(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+
+        if(matchMedia){
+        var screen = matchMedia('(max-width:400px)')
+        screen.addListener(changesFive)
+        changesFive(screen)
+        }
+            function changesFive(screen){
+                if(screen.matches){
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+            }
+        }
+    </script>
+</body>
+</html>
