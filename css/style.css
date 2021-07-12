@@ -1862,6 +1862,14 @@ footer{
 
 @media screen and (max-width: 800px){
 
+    .main_banner{
+        background: url('../img/DSC_6947\ 1-min.png') center / cover;
+    }
+
+    header{
+        background: url('../img/1023766469\ 1-min.png') center / cover;
+    }
+
     .theatre_block_content_inside_right a::before{
         width: 17%;
     }
