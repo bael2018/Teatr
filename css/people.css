@@ -1080,10 +1080,6 @@ footer{
 
 @media screen and (max-width: 450px){
 
-    footer{
-        margin-top: 100px;
-    }
-
     .footer_left{
         padding: 30px;
         padding-bottom: 0px;
