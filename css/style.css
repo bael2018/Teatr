@@ -5,13 +5,46 @@ body{
     font-family: 'Alice', serif;
 }
 
+.swiper-button-next{
+    left: 92% !important;
+    color: black !important; 
+    background: rgba(196, 196, 196, 1);
+    border-radius: 10%;
+    transition: .3s;
+    padding: 15px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    color: white !important; 
+    background: #0C184D;
+}
+
+.swiper-button-prev{
+    left: 4% !important;
+    color: black !important; 
+    background: rgba(196, 196, 196, 1);
+    border-radius: 10%;
+    padding: 15px;
+    transition: .3s;
+}
+
+.linksHover{
+    transition: .3s;
+}
+
+.linksHover:hover{
+    color: white !important;
+    background: #0C184D !important;
+}
+
 /* header */
 
 header{
     width: 100%;
     background: url('../img/1023766469\ 1.png') center / cover;
     position: relative;
-    height: 650px;
+    height: 700px;
 }
 
 header::before{
@@ -214,19 +247,19 @@ header::before{
 }
 
 .appearInfoHistory div{
-    bottom: -990%;
+    bottom: -960%;
     width: 260%;
     left: -90%;
 }
 
 .appearInfoRep div{
-    bottom: -560%;
+    bottom: -530%;
     width: 130%;
     left: -25%;
 }
 
 .appearInfoGroup div{
-    bottom: -680%;
+    bottom: -660%;
     width: 130%;
     left: -25%;
 }
@@ -290,8 +323,6 @@ header::before{
     position: absolute;
 }
 
-
-
 /* main */
 
 main{
@@ -302,7 +333,7 @@ main{
 /* main_title */
 
 .main_title{
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     flex-direction: column;
     display: flex;
@@ -321,12 +352,13 @@ main{
 }
 
 .main_title a{
-    background: rgba(29, 45, 110, 0.9);
+    background: rgba(196, 196, 196, 0.61);
     width: 150px;
     text-decoration: none;
     font-weight: 500;
-    color: white;
-    padding: 7px 5px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    padding: 7px 15px;
     margin-top: 30px;
 }
 
@@ -353,7 +385,7 @@ main{
 /* main_banner */
 
 .main_banner{
-    width: 85%;
+    width: 90%;
     background: url('../img/DSC_6947\ 1.png') center / cover;
     height: 500px;
     margin: 70px auto;
@@ -430,7 +462,7 @@ main{
 }
 
 .theatre_block_content_inside{
-    width: 85%;
+    width: 90%;
     position: relative;
     height: 100%;
     justify-content: space-between;
@@ -682,9 +714,11 @@ main{
 .ticket_block{
     width: 100%;
     background: #0C184D;
-    margin-top: 150px;
+    margin-top: 200px;
     height: 350px;
     position: relative;
+    display: block;
+    text-decoration: none;
     margin-bottom: 70px;
 }
 
@@ -703,7 +737,7 @@ main{
 }
 
 .ticket_content{
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     height: 100%;
     position: relative;
@@ -715,7 +749,7 @@ main{
 .ticket_content span{
     color: white;
     font-size: 70px;
-    width: 45%;
+    width: 60%;
     display: block;
     position: relative;
 }
@@ -752,6 +786,8 @@ main{
     width: 100%;
     position: relative;
     transition: .3s;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .places_card::before{
@@ -838,6 +874,21 @@ footer{
     align-items: flex-start;
     padding: 50px 50px;
     padding-left: 90px;
+}
+
+.footer_inner3 li a{
+    font-size: 12px !important;
+    text-align: left;
+}
+
+.footer_inner3 li i{
+    color: white;
+    background: black;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 0x;
+    padding: 3px;
+    border-radius: 50%;
 }
 
 .footer_left ul{
@@ -1085,7 +1136,7 @@ footer{
     }
 
     header{
-        height: 600px;
+        height: 650px;
     }
 
     .header_title{
@@ -1098,6 +1149,10 @@ footer{
 }
 
 @media screen and (max-width: 1400px){
+
+    .appearInfoEducation div{
+        bottom: -610%;
+    }
 
     .navbar{
         width: 90%;
@@ -1216,7 +1271,7 @@ footer{
     }
     
     .appearInfoEducation div{
-        bottom: -740%;
+        bottom: -720%;
     }
 
     .navbar_links span:nth-child(2) li a{
@@ -1438,7 +1493,7 @@ footer{
     }
 
     .ticket_block{
-        margin-top: 70px;
+        margin-top: 150px;
     }
 
     header{
@@ -2050,6 +2105,7 @@ footer{
 
     .ticket_block{
         height: 180px;
+        margin-top: 100px;
     }
 
     .main_banner{
@@ -2198,6 +2254,7 @@ footer{
     .ticket_block{
         height: 160px;
         overflow: hidden;
+        margin-top: 50px;
     }
 
     .ticket_image_one{
@@ -2205,8 +2262,12 @@ footer{
     }
 
     .ticket_image_two{
-        width: 400px;
-        top: -55%;
+        display: none;
+    }
+
+    .ticket_content p,
+    .ticket_content span{
+        width: 100%;
     }
 
     .footer_left ul{
@@ -2269,12 +2330,11 @@ footer{
     }
 
     .main_title span{
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .ticket_content p{
         font-size: 13px;
-        width: 60%;
     }
 
     .theatre_block_image{
@@ -2313,6 +2373,7 @@ footer{
         width: 100%;
         margin-left: 0px;
         padding-bottom: 15px;
+        margin-right: 0px;
     }
     
     .navbar ul:nth-child(1) li a img{
@@ -2493,12 +2554,11 @@ footer{
 
     .ticket_content span{
         font-size: 25px;
-        width: 55%;
+        width: 80%;
     }
 
     .ticket_content p{
         font-size: 12px;
-        width: 50%;
     }
 
     .piece_card_header div h2{
@@ -2535,7 +2595,6 @@ footer{
 
     .ticket_content span{
         font-size: 23px;
-        width: 55%;
     }
 
     .theatre_block_content_inside_left{
@@ -2575,6 +2634,19 @@ footer{
 }
 
 @media screen and (max-width: 450px){
+
+    .main_title{
+        width: 70%;
+        margin-left: 25px !important;
+    }
+
+    .main_title span::before{
+        width: 60%;
+    }
+
+    .main_title span{
+        width: 250px;
+    }
 
     .places_block{
         height: 230px;
@@ -2644,7 +2716,6 @@ footer{
 
     .ticket_content span{
         font-size: 21px;
-        width: 55%;
     }
 
     .footer_left ul{
@@ -2717,7 +2788,6 @@ footer{
 
     .ticket_content span{
         font-size: 20px;
-        width: 57%;
     }
 
     .ticket_image_one{
@@ -2755,6 +2825,10 @@ footer{
 }
 
 @media screen and (max-width: 380px){
+
+    .main_title span{
+        width: 250px;
+    }
     
     .main_picture{
         width: 410px;
@@ -2765,7 +2839,6 @@ footer{
 
     .ticket_content span{
         font-size: 19px;
-        width: 57%;
     }
 }
 

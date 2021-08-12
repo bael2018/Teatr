@@ -139,6 +139,7 @@ header{
     display: block;
     padding-bottom: 9px;
     margin-left: 10px;
+    margin-right: 20px;
 }
 
 .activeLanguage,
@@ -202,6 +203,69 @@ header{
 }
 
 
+.appearInfoHistory div{
+    bottom: -915%;
+    width: 260%;
+    left: -90%;
+}
+
+.appearInfoRep div{
+    bottom: -520%;
+    width: 110%;
+    left: -20%;
+}
+
+.appearInfoGroup div{
+    bottom: -630%;
+    width: 100%;
+    left: -15%;
+}
+
+.appearInfoTicket div{
+    bottom: -1070%;
+    width: 110%;
+    left: -15%;
+}
+
+.appearInfoMuseum div{
+    bottom: -440%;
+    width: 230%;
+    left: -70%;
+}
+
+.appearInfoTheatre div{
+    bottom: -560%;
+    width: 150%;
+    left: -40%;
+}
+
+.appearInfoEducation div{
+    bottom: -520%;
+    width: 150%;
+    left: -30%;
+}
+
+.navbar_links span:nth-child(2) li div a{
+    font-size: 12px !important;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.navbar_links span:nth-child(1) a{
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background: white;
+}
+
+
 /* main */
 
 
@@ -215,19 +279,21 @@ main{
     margin: 0 auto;
 }
 
-.actor_inner span{    
+.actor_inner a{    
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #E7E7E7;
     width: 200px;
     text-align: center;
+    text-decoration: none;
     padding: 7px 8px;
+    color: black;
     padding-bottom: 9px;
     cursor: pointer;
 }
 
-.actor_inner span i{
+.actor_inner a i{
     margin-top: 5px;
     font-size: 20px;
 }
@@ -281,7 +347,6 @@ main{
 .actor_inside_one{
     height: 100%;
     width: 65%;
-    cursor: pointer;
     background: url('../img/wsi-imageoptim-ryan-gosling-beauty-and-the-beast.png') center / cover;
 }
 
@@ -294,7 +359,6 @@ main{
 }
 
 .actor_inside_two_child{
-    cursor: pointer;
     width: 100%;
     background: url('../img/wsi-imageoptim-ryan-gosling-beauty-and-the-beast.png') center / cover;
     height: 48%;
@@ -370,6 +434,7 @@ main{
     flex-direction: column;
     cursor: pointer;
     display: flex;
+    text-decoration: none;
     align-items: flex-start;
     transition: .3s;
     height: 100%;
@@ -480,6 +545,21 @@ footer{
     margin-bottom: 5px;
 }
 
+.footer_inner3 li a{
+    font-size: 12px !important;
+    text-align: left;
+}
+
+.footer_inner3 li i{
+    color: white;
+    background: black;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 0x;
+    padding: 3px;
+    border-radius: 50%;
+}
+
 .footer_inner3 div{
     margin-top: 30px;
     display: flex;
@@ -566,9 +646,41 @@ footer{
     .header_image{
         width: 1700px;
     }
+
+    .appearInfoHistory div{
+        bottom: -1000%;
+    }
+    
+    .appearInfoRep div{
+        bottom: -570%;
+    }
+    
+    .appearInfoGroup div{
+        bottom: -685%;
+    }
+    
+    .appearInfoTicket div{
+        bottom: -1130%;
+    }
+    
+    .appearInfoMuseum div{
+        bottom: -560%;
+    }
+    
+    .appearInfoTheatre div{
+        bottom: -620%;
+    }
+    
+    .appearInfoEducation div{
+        bottom: -640%;
+    }
 }
 
 @media screen and (max-width: 1475px){
+
+    .appearInfoTicket div{
+        bottom: -1210%;
+    }
 
     .header_image{
         width: 1650px;
@@ -636,6 +748,35 @@ footer{
 
 @media screen and (max-width: 1250px){
 
+    .appearInfoHistory div{
+        bottom: -1050%;
+    }
+    
+    .appearInfoRep div{
+        bottom: -540%;
+    }
+    
+    .appearInfoGroup div{
+        bottom: -670%;
+    }
+    
+    .appearInfoTicket div{
+        bottom: -1200%;
+    }
+    
+    .appearInfoMuseum div{
+        bottom: -620%;
+        left: -80%;
+    }
+    
+    .appearInfoTheatre div{
+        bottom: -600%;
+    }
+    
+    .appearInfoEducation div{
+        bottom: -610%;
+    }
+
     .header_image{
         width: 1550px;
     }
@@ -652,10 +793,6 @@ footer{
         font-size: 13px;
     }
 
-    .appearInfo div{
-        bottom: -60px;
-    }
-
     .navbar ul:nth-child(1) li a img{
         width: 210px;
     }
@@ -667,12 +804,12 @@ footer{
 
 @media screen and (max-width: 1200px){
 
-    .actor_inner span{
+    .actor_inner a{
         width: 180px;
         font-size: 15px;
     }
     
-    .actor_inner span i{
+    .actor_inner a i{
         margin-top: 5px;
         font-size: 18px;
     }
@@ -703,6 +840,10 @@ footer{
 }
 
 @media screen and (max-width: 1100px){
+
+    .navbar_links span:nth-child(1) a{
+        display: none;
+    }
 
     .header_image{
         width: 1300px;  
@@ -736,6 +877,9 @@ footer{
     .burger_title{
         border-bottom: 2px solid rgb(255, 255, 255);
         height: 24%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
@@ -778,7 +922,7 @@ footer{
     }
 
     .burger_link_one:hover span{
-        height: 75px;
+        height: 270px;
         margin-top: 10px;
     }
 
@@ -786,6 +930,40 @@ footer{
         display: flex;
         width: 140px;
         flex-direction: column;
+    }
+
+    .burger_title span{
+        display: flex;
+        margin-right: 100px;
+    }
+
+    .burger_title span a{
+        color: black;
+        text-decoration: none;
+        background: white;
+        display: flex;
+        margin: 0 5px;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+    }
+
+    .burger_link_two:hover span{
+        height: 210px;
+    }
+
+    .burger_link_three:hover span{
+        height: 87px;
+    }
+
+    .burger_link_five:hover span{
+        height: 105px;
+    }
+
+    .burger_link_six:hover span{
+        height: 130px;
     }
     
     .burger_link_one span{
@@ -963,12 +1141,12 @@ footer{
         padding-left: 60px;
     }
 
-    .actor_inner span{
+    .actor_inner a{
         width: 160px;
         font-size: 14px;
     }
     
-    .actor_inner span i{
+    .actor_inner a i{
         font-size: 17px;
     }
 }
@@ -994,12 +1172,12 @@ footer{
 
 @media screen and (max-width: 700px){
 
-    .actor_inner span{
+    .actor_inner a{
         width: 150px;
         font-size: 14px;
     }
     
-    .actor_inner span i{
+    .actor_inner a i{
         font-size: 16px;
     }
 
@@ -1080,6 +1258,7 @@ footer{
     .navbar_links span:nth-child(1) label{
         width: 100%;
         margin-left: 0px;
+        margin-right: 0;
         padding-bottom: 15px;
     }
     
@@ -1149,6 +1328,10 @@ footer{
     .footer_inner3 li{
         padding-left: 10px;
     }
+
+    .burger_title span{
+        margin-right: 50px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1195,6 +1378,10 @@ footer{
 
 @media screen and (max-width: 450px){
 
+    .navbar_links span:nth-child(1) label input{
+        width: 87% !important;
+    }
+
     footer{
         margin-top: 100px;
     }
@@ -1211,6 +1398,17 @@ footer{
 }
 
 @media screen and (max-width: 430px){
+
+    .burger_title{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 30px;
+    }
+
+    .burger_title span{
+        margin-right: 20px;
+        margin-top: 15px;
+    }
 
     .footer_left ul{
         width: 100%;
@@ -1245,13 +1443,6 @@ footer{
 
     .footer_inner4 li{
         padding-left: 0px;
-    }
-}
-
-@media screen and (max-width: 416px){
-
-    .navbar_links span:nth-child(1) label input{
-        width: 87% !important;
     }
 }
 
@@ -1317,6 +1508,10 @@ footer{
 
     .actor_carousel_title{
         width: 90%;
+    }
+
+    .actor_card h2{
+        font-size: 30px;
     }
 }
 

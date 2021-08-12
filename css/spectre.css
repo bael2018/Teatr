@@ -5,6 +5,16 @@ body{
     font-family: 'Alice', serif;
 }
 
+.linksHover{
+    transition: .3s;
+}
+
+.linksHover:hover{
+    color: white !important;
+    background: #0C184D !important;
+}
+
+
 header{
     background: #0C184D;
     height: 190px;
@@ -139,6 +149,7 @@ header{
     display: block;
     padding-bottom: 9px;
     margin-left: 10px;
+    margin-right: 20px;
 }
 
 .activeLanguage,
@@ -173,7 +184,7 @@ header{
 
 .appearInfo div p{
     margin: 0px;
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 4px;
     cursor: pointer;
     color: white;
@@ -201,8 +212,75 @@ header{
     display: block;
 }
 
+.appearInfoHistory div{
+    bottom: -915%;
+    width: 260%;
+    left: -90%;
+}
+
+.appearInfoRep div{
+    bottom: -520%;
+    width: 110%;
+    left: -20%;
+}
+
+.appearInfoGroup div{
+    bottom: -630%;
+    width: 100%;
+    left: -15%;
+}
+
+.appearInfoTicket div{
+    bottom: -1070%;
+    width: 110%;
+    left: -15%;
+}
+
+.appearInfoMuseum div{
+    bottom: -440%;
+    width: 230%;
+    left: -70%;
+}
+
+.appearInfoTheatre div{
+    bottom: -560%;
+    width: 150%;
+    left: -40%;
+}
+
+.appearInfoEducation div{
+    bottom: -520%;
+    width: 150%;
+    left: -30%;
+}
+
+.navbar_links span:nth-child(2) li div a{
+    font-size: 12px !important;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.navbar_links span:nth-child(1) a{
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background: white;
+}
 
 /* main */
+
+.info_video iframe{
+    width: 100%;
+    margin-top: 60px;
+    height: 450px;
+}
 
 .actor_inner,
 .info{
@@ -210,20 +288,22 @@ header{
     margin: 50px auto;
 }
 
-.actor_inner span,
-.info_inner span{
+.actor_inner a,
+.info_inner a{
     display: flex;
     justify-content: space-around;
+    text-decoration: none;
     align-items: center;
     background: #E7E7E7;
+    color:black;
     width: 200px;
     padding: 7px 8px;
     padding-bottom: 9px;
     cursor: pointer;
 }
 
-.actor_inner span i,
-.info_inner span i{
+.actor_inner a i,
+.info_inner a i{
     margin-top: 5px;
     font-size: 20px;
 }
@@ -328,7 +408,13 @@ header{
     text-decoration: none;
     padding: 10px 20px;
     padding-bottom: 13px;
+    transition: .3s;
     background: #989898;
+}
+
+.info_child_right a:hover{
+    color: white;
+    background: #0C184D;
 }
 
 .swiper-container{
@@ -404,31 +490,16 @@ header{
     background: url('../img/s1200-2-5\ 1.png') center / cover;
 }
 
-.actor_footer{
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 15px;
-    border-top: 6px solid #E9E9E9;;
-    padding-top: 15px;
-    padding-bottom: 35px;
-    border-bottom: 6px solid #E9E9E9;;
-}
-
-.actor_footer h3{
-    font-weight: 400;
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-
-.actor_footer p{
-    font-size: 23px;
-    line-height: 1.7;
-}
-
 .actor_card{
     position: relative;
     height: 100%;
     width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.actor_card:hover .actor_picture{
+    transform: scale(1.1);
 }
 
 .actor_picture{
@@ -440,6 +511,7 @@ header{
     top: 0;
     padding-left: 20px;
     padding-bottom: 25px;
+    transition: .3s;
     box-sizing: border-box;
     position: relative;
 }
@@ -476,6 +548,7 @@ header{
 .actor_content h3{
     margin: 0px;
     font-weight: 500;
+    color: black;
     font-size: 24px;
 }
 
@@ -505,6 +578,21 @@ footer{
     margin: 0px;
     list-style-type: none;
     padding: 0px;
+}
+
+.footer_inner3 li a{
+    font-size: 12px !important;
+    text-align: left;
+}
+
+.footer_inner3 li i{
+    color: white;
+    background: black;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 0x;
+    padding: 3px;
+    border-radius: 50%;
 }
 
 .footer_logo{
@@ -619,6 +707,34 @@ footer{
 
 @media screen and (max-width: 1550px){
 
+    .appearInfoHistory div{
+        bottom: -975%;
+    }
+    
+    .appearInfoRep div{
+        bottom: -550%;
+    }
+    
+    .appearInfoGroup div{
+        bottom: -670%;
+    }
+    
+    .appearInfoTicket div{
+        bottom: -1110%;
+    }
+    
+    .appearInfoMuseum div{
+        bottom: -530%;
+    }
+    
+    .appearInfoTheatre div{
+        bottom: -660%;
+    }
+    
+    .appearInfoEducation div{
+        bottom: -520%;
+    }
+
     .navbar_links span:nth-child(2) li a{
         font-size: 17px;
     }
@@ -629,6 +745,18 @@ footer{
 }
 
 @media screen and (max-width: 1475px){
+
+    .appearInfoTicket div{
+        bottom: -1200%;
+    }
+
+    .appearInfoTheatre div{
+        bottom: -590%;
+    }
+
+    .appearInfoEducation div{
+        bottom: -610%;
+    }
 
     .header_image{
         width: 1650px;
@@ -656,6 +784,12 @@ footer{
 }
 
 @media screen and (max-width: 1325px){
+
+    .appearInfoGroup div{
+        bottom: -670%;
+        width: 150%;
+        left: -35%;
+    }
 
     .navbar_links span:nth-child(2) li a{
         font-size: 14px;
@@ -690,6 +824,14 @@ footer{
 
 @media screen and (max-width: 1250px){
 
+    .appearInfoHistory div{
+        bottom: -1050%;
+    }
+
+    .appearInfoMuseum div{
+        bottom: -610%;
+    }
+
     .header_image{
         width: 1550px;
     }
@@ -704,10 +846,6 @@ footer{
 
     .appearInfo div p{
         font-size: 13px;
-    }
-
-    .appearInfo div{
-        bottom: -60px;
     }
 
     .navbar ul:nth-child(1) li a img{
@@ -747,6 +885,10 @@ footer{
 
 @media screen and (max-width: 1100px){
 
+    .navbar_links span:nth-child(1) a{
+        display: none;
+    }
+
     .header_image{
         width: 1300px;  
     }
@@ -780,6 +922,9 @@ footer{
         border-bottom: 2px solid rgb(255, 255, 255);
         height: 24%;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .burger_inside{
@@ -821,7 +966,7 @@ footer{
     }
 
     .burger_link_one:hover span{
-        height: 75px;
+        height: 270px;
         margin-top: 10px;
     }
 
@@ -829,6 +974,40 @@ footer{
         display: flex;
         width: 140px;
         flex-direction: column;
+    }
+
+    .burger_title span{
+        display: flex;
+        margin-right: 100px;
+    }
+
+    .burger_title span a{
+        color: black;
+        text-decoration: none;
+        background: white;
+        display: flex;
+        margin: 0 5px;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+    }
+
+    .burger_link_two:hover span{
+        height: 210px;
+    }
+
+    .burger_link_three:hover span{
+        height: 87px;
+    }
+
+    .burger_link_five:hover span{
+        height: 105px;
+    }
+
+    .burger_link_six:hover span{
+        height: 130px;
     }
     
     .burger_link_one span{
@@ -1106,6 +1285,7 @@ footer{
         width: 100%;
         margin-left: 0px;
         padding-bottom: 15px;
+        margin-right: 0;
     }
     
     .navbar ul:nth-child(1) li a img{
@@ -1160,6 +1340,10 @@ footer{
 }
 
 @media screen and (max-width: 550px){
+
+    .burger_title span{
+        margin-right: 50px;
+    }
 
     .swiper-slide{
         transform: translateX(0px) !important;
@@ -1220,6 +1404,10 @@ footer{
 
 @media screen and (max-width: 450px){
 
+    .navbar_links span:nth-child(1) label input{
+        width: 87% !important;
+    }
+
     footer{
         margin-top: 100px;
     }
@@ -1236,6 +1424,17 @@ footer{
 }
 
 @media screen and (max-width: 430px){
+
+    .burger_title{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 30px;
+    }
+
+    .burger_title span{
+        margin-right: 20px;
+        margin-top: 15px;
+    }
 
     .footer_left ul{
         width: 100%;
@@ -1273,13 +1472,6 @@ footer{
     }
 }
 
-@media screen and (max-width: 416px){
-
-    .navbar_links span:nth-child(1) label input{
-        width: 87% !important;
-    }
-}
-
 @media screen and (max-width: 400px){
 
     .footer_inner4{
@@ -1313,25 +1505,12 @@ footer{
     .actor_title{
         width: 90%;
     }
-    
-    .actor_footer{
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 1330px){
 
     .info_child_right h1{
         font-size: 45px;
-    }
-
-    .actor_footer h3{
-        font-size: 33px;
-    }
-    
-    .actor_footer p{
-        font-size: 20px;
-        line-height: 1.6;
     }
 
     .info_child_right a{
@@ -1364,25 +1543,16 @@ footer{
 
 @media screen and (max-width: 1200px){
 
-    .actor_inner span,
-    .info_inner span{
+    .actor_inner a,
+    .info_inner a{
         width: 180px;
         font-size: 15px;
     }
     
-    .actor_inner span i,
-    .info_inner span i{
+    .actor_inner a i,
+    .info_inner a i{
         margin-top: 5px;
         font-size: 18px;
-    }
-
-    .actor_footer h3{
-        font-size: 31px;
-    }
-    
-    .actor_footer p{
-        font-size: 17px;
-        line-height: 1.6;
     }
 }
 
@@ -1397,13 +1567,6 @@ footer{
 
     .actor_picture h3{
         font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 900px){
-
-    .actor_footer h3{
-        font-size: 29px;
     }
 }
 
@@ -1424,14 +1587,14 @@ footer{
 
 @media screen and (max-width: 800px){
 
-    .actor_inner span,
-    .info_inner span{
+    .actor_inner a,
+    .info_inner a{
         width: 160px;
         font-size: 14px;
     }
     
-    .actor_inner span i,
-    .info_inner span i{
+    .actor_inner a i,
+    .info_inner a i{
         font-size: 17px;
     }
 

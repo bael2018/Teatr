@@ -36,3 +36,20 @@ closeBurger.addEventListener('click' , e => {
     e.preventDefault()
     burgerContainer.classList.remove('activeBurger')
 })
+
+// modal-info
+
+const museum = document.querySelectorAll('.people_content div')
+const modal = document.querySelector('.modal')
+const modalCloseBtn = document.querySelector('.modal_inside span')
+museum.forEach(item => {
+    item.addEventListener('click' , e => {
+        e.preventDefault()
+        modal.classList.add('activeModal')
+    })
+})
+
+modalCloseBtn.addEventListener('click' , e => {
+    e.preventDefault()
+    modal.classList.remove('activeModal')
+})

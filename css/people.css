@@ -5,6 +5,86 @@ body{
     font-family: 'Alice', serif;
 }
 
+.modal{
+    position: fixed;
+    height: 90vh;
+    background: #E6E6E6;
+    z-index: 5;
+    transition: .3s;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.modal.activeModal{
+    transform: scale(1);
+    pointer-events: all;
+    opacity: 1;
+}
+
+.modal_inside{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal_inside span{
+    position: absolute;
+    font-size: 35px;
+    color: #0C184D;
+    z-index: 1;
+    cursor: pointer;
+    right: 0;
+}
+
+.modal_picture{
+    width: 45%;
+    height: 100%;
+}
+
+.modal_picture img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.modal_content{
+    width: 50%;
+    position: relative;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.modal_content h2{
+    color: #0C184D;
+    font-weight: 500;
+    font-size: 35px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.modal_content h4{
+    color: #0C184D;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 27px;
+}
+
+.modal_content p{
+    color: #0C184D;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
 header{
     background: #0C184D;
     height: 190px;
@@ -139,6 +219,7 @@ header{
     display: block;
     padding-bottom: 9px;
     margin-left: 10px;
+    margin-right: 20px;
 }
 
 .activeLanguage,
@@ -173,7 +254,7 @@ header{
 
 .appearInfo div p{
     margin: 0px;
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 4px;
     cursor: pointer;
     color: white;
@@ -201,6 +282,68 @@ header{
     display: block;
 }
 
+.appearInfoHistory div{
+    bottom: -915%;
+    width: 260%;
+    left: -90%;
+}
+
+.appearInfoRep div{
+    bottom: -520%;
+    width: 110%;
+    left: -20%;
+}
+
+.appearInfoGroup div{
+    bottom: -630%;
+    width: 100%;
+    left: -15%;
+}
+
+.appearInfoTicket div{
+    bottom: -1070%;
+    width: 110%;
+    left: -15%;
+}
+
+.appearInfoMuseum div{
+    bottom: -440%;
+    width: 230%;
+    left: -70%;
+}
+
+.appearInfoTheatre div{
+    bottom: -560%;
+    width: 150%;
+    left: -40%;
+}
+
+.appearInfoEducation div{
+    bottom: -520%;
+    width: 150%;
+    left: -30%;
+}
+
+.navbar_links span:nth-child(2) li div a{
+    font-size: 12px !important;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.navbar_links span:nth-child(1) a{
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background: white;
+}
+
 
 /* main */
 
@@ -215,11 +358,13 @@ main{
     margin: 0 auto;
 }
 
-.actor_inner span{    
+.actor_inner a{    
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #E7E7E7;
+    color: black;
+    text-decoration: none;
     width: 200px;
     text-align: center;
     padding: 7px 8px;
@@ -227,7 +372,7 @@ main{
     cursor: pointer;
 }
 
-.actor_inner span i{
+.actor_inner a i{
     margin-top: 5px;
     font-size: 20px;
 }
@@ -330,6 +475,21 @@ footer{
     margin: 0px;
     list-style-type: none;
     padding: 0px;
+}
+
+.footer_inner3 li a{
+    font-size: 12px !important;
+    text-align: left;
+}
+
+.footer_inner3 li i{
+    color: white;
+    background: black;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 0x;
+    padding: 3px;
+    border-radius: 50%;
 }
 
 .footer_logo{
@@ -483,7 +643,6 @@ footer{
         width: 90%;
         margin: 50px auto;
     }
-
 }
 
 @media screen and (max-width: 1325px){
@@ -552,12 +711,12 @@ footer{
 
 @media screen and (max-width: 1200px){
 
-    .actor_inner span{
+    .actor_inner a{
         width: 180px;
         font-size: 15px;
     }
     
-    .actor_inner span i{
+    .actor_inner a i{
         margin-top: 5px;
         font-size: 18px;
     }
@@ -588,6 +747,26 @@ footer{
 }
 
 @media screen and (max-width: 1100px){
+
+    .burger_link_two:hover span{
+        height: 210px;
+    }
+
+    .burger_link_three:hover span{
+        height: 87px;
+    }
+
+    .burger_link_five:hover span{
+        height: 105px;
+    }
+
+    .burger_link_six:hover span{
+        height: 130px;
+    }
+
+    .navbar_links span:nth-child(1) a{
+        display: none;
+    }
 
     .header_image{
         width: 1300px;  
@@ -621,6 +800,9 @@ footer{
     .burger_title{
         border-bottom: 2px solid rgb(255, 255, 255);
         height: 24%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
@@ -662,11 +844,6 @@ footer{
         position: absolute;
     }
 
-    .burger_link_one:hover span{
-        height: 75px;
-        margin-top: 10px;
-    }
-
     .burger_link_one{
         display: flex;
         width: 140px;
@@ -679,9 +856,27 @@ footer{
         transition: .3s;
     }
 
+    .burger_title span{
+        display: flex;
+        margin-right: 100px;
+    }
+
     .burger_link_one span a{
         font-size: 16px !important;
         color: white;
+    }
+
+    .burger_title span a{
+        color: black;
+        text-decoration: none;
+        background: white;
+        display: flex;
+        margin: 0 5px;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
     }
 
     .burger_inside ul li a:hover::before{
@@ -848,12 +1043,12 @@ footer{
         padding-left: 60px;
     }
 
-    .actor_inner span{
+    .actor_inner a{
         width: 160px;
         font-size: 14px;
     }
     
-    .actor_inner span i{
+    .actor_inner a i{
         font-size: 17px;
     }
 }
@@ -879,12 +1074,12 @@ footer{
 
 @media screen and (max-width: 700px){
 
-    .actor_inner span{
+    .actor_inner a{
         width: 150px;
         font-size: 14px;
     }
     
-    .actor_inner span i{
+    .actor_inner a i{
         font-size: 16px;
     }
 
@@ -1038,16 +1233,16 @@ footer{
 
 @media screen and (max-width: 500px){
 
+    .burger_inside{
+        flex-direction: column;
+    }
+
     .burger_inside ul li a{
         font-size: 20px;
     }
 
     .burger_content img{
         width: 180px;
-    }
-
-    .burger_inside{
-        flex-direction: column;
     }
 
     .burger_title{
@@ -1079,6 +1274,17 @@ footer{
 }
 
 @media screen and (max-width: 450px){
+
+    .burger_title{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 30px;
+    }
+
+    .burger_title span{
+        margin-right: 20px;
+        margin-top: 15px;
+    }
 
     .footer_left{
         padding: 30px;
@@ -1154,7 +1360,42 @@ footer{
     }
 }
 
+@media screen and (max-width: 1550px){
+
+    .appearInfoHistory div{
+        bottom: -955%;
+    }
+    
+    .appearInfoRep div{
+        bottom: -520%;
+    }
+    
+    .appearInfoGroup div{
+        bottom: -650%;
+    }
+    
+    .appearInfoTicket div{
+        bottom: -1120%;
+    }
+    
+    .appearInfoMuseum div{
+        bottom: -520%;
+    }
+    
+    .appearInfoTheatre div{
+        bottom: -580%;
+    }
+    
+    .appearInfoEducation div{
+        bottom: -600%;
+    }
+}
+
 @media screen and (max-width: 1400px){
+
+    .appearInfoTicket div{
+        bottom: -1180%;
+    }
 
     .people_card{
         height: 300px;
@@ -1186,6 +1427,18 @@ footer{
 
 @media screen and (max-width: 1200px){
 
+    .modal_content h2{
+        font-size: 32px;
+    }
+    
+    .modal_content h4{
+        font-size: 24px;
+    }
+    
+    .modal_content p{
+        font-size: 17px;
+    }
+
     .people_title{
         font-size: 28px;
     }
@@ -1200,6 +1453,48 @@ footer{
     .people_card{
         width: 31%;
         height: 280px;
+    }
+
+    .modal{
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+
+    .modal_inside{
+        height: 100%;
+        padding-top: 80px;
+        overflow-y: scroll;
+    }
+
+    .modal_inside span{
+        top: 0px;
+        font-size: 40px;
+    }
+
+    .modal_picture{
+        width: 100%;
+        height: 500px;
+    }
+
+    .modal_content{
+        height: 350px;
+        width: 100%;
+        padding: 30px 0;
+        overflow-y: scroll;
+    }
+
+    .modal_content h2{
+        font-size: 32px;
+    }
+    
+    .modal_content h4{
+        font-size: 24px;
+    }
+    
+    .modal_content p{
+        font-size: 18px;
     }
 }
 
@@ -1252,6 +1547,11 @@ footer{
 
 @media screen and (max-width: 600px){
 
+    .modal{
+        padding: 25px;
+        padding-bottom: 50px;
+    }
+
     .people_card h2{
         font-size: 26px;
     }
@@ -1263,12 +1563,21 @@ footer{
 
 @media screen and (max-width: 580px){
 
+    .burger_title span{
+        margin-right: 50px;
+    }
+
     header{
         height: 140px !important;
     }
 }
 
 @media screen and (max-width: 530px){
+
+    .burger_title{
+        height: 22%;
+        width: 100%;
+    }
 
     .people_card h2{
         font-size: 30px;
