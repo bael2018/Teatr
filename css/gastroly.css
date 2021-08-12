@@ -1452,7 +1452,7 @@ footer{
     }
     
     .drop_container_alt div:nth-child(2) span{
-        width: 10px;
+        width: 30px;
         font-size: 17px;
     }
 }
@@ -1480,6 +1480,11 @@ footer{
         order: 1;
         margin: 0px;
     }   
+
+    .drop_container_alt div:nth-child(2) span{
+        width: 40px;
+        padding: 7px 0;
+    }
 }
 
 @media screen and (max-width: 500px){
