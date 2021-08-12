@@ -1580,6 +1580,10 @@ footer{
 
 @media screen and (max-width: 1100px){
     
+    .swiper-button-next{
+        left: 90% !important;
+    }
+    
     .navbar_links span:nth-child(1) a{
         display: none;
     }
@@ -1905,6 +1909,21 @@ footer{
 }
 
 @media screen and (max-width: 870px){
+
+    .swiper-button-next{
+        font-size: 10px !important;
+        left: 87% !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        padding: 10px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        font-size: 35px !important;
+    }
 
     .ticket_content span{
         font-size: 34px;
@@ -2521,6 +2540,20 @@ footer{
 }
 
 @media screen and (max-width: 500px){
+
+    .swiper-button-next{
+        left: 85% !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        padding: 6px 8px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        font-size: 30px !important;
+    }
 
     .burger_inside ul li a{
         font-size: 20px;
