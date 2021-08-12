@@ -1255,6 +1255,10 @@ footer{
 
 @media screen and (max-width: 500px){
 
+    header{
+        background: url('../img/радиотеатр\ на\ сайт\ 3-min.png') center / cover;
+    }
+
     .burger_inside ul li a{
         font-size: 20px;
     }
