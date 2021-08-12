@@ -9,6 +9,30 @@ body{
     transition: .3s;
 }
 
+.swiper-button-next{
+    left: 92% !important;
+    color: black !important; 
+    background: rgba(196, 196, 196, 1);
+    border-radius: 10%;
+    transition: .3s;
+    padding: 15px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    color: white !important; 
+    background: #0C184D;
+}
+
+.swiper-button-prev{
+    left: 4% !important;
+    color: black !important; 
+    background: rgba(196, 196, 196, 1);
+    border-radius: 10%;
+    padding: 15px;
+    transition: .3s;
+}
+
 .linksHover:hover{
     color: white !important;
     background: #0C184D !important;
@@ -1561,12 +1585,34 @@ footer{
     .actor_picture h3{
         font-size: 25px;
     }
+
+    .swiper-button-next{
+        left: 90% !important;
+    }
 }
 
 @media screen and (max-width: 1000px){
 
     .actor_picture h3{
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 870px){
+
+    .swiper-button-next{
+        font-size: 10px !important;
+        left: 87% !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        padding: 10px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        font-size: 35px !important;
     }
 }
 
@@ -1675,6 +1721,14 @@ footer{
 
     .info_child_right{
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none !important;
     }
 }
 

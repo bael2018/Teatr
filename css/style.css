@@ -2541,18 +2541,9 @@ footer{
 
 @media screen and (max-width: 500px){
 
-    .swiper-button-next{
-        left: 85% !important;
-    }
-
     .swiper-button-next,
     .swiper-button-prev{
-        padding: 6px 8px;
-    }
-
-    .swiper-button-next::after,
-    .swiper-button-prev::after{
-        font-size: 30px !important;
+        display: none !important;
     }
 
     .burger_inside ul li a{
