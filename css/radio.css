@@ -22,6 +22,10 @@ header{
     font-size: 25px;
 }
 
+.header_back a{
+    color: black;
+}
+
 /* navbar */
 
 .burger_menu{

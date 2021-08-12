@@ -284,7 +284,7 @@ header{
     margin: 50px auto;
 }
 
-.actor_inner span{
+.actor_inner a{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,9 +293,11 @@ header{
     padding: 7px 11px;
     padding-bottom: 9px;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
-.actor_inner span i{
+.actor_inner a i{
     margin-top: 5px;
     font-size: 20px;
 }
@@ -312,18 +314,20 @@ header{
     display: flex;
 }
 
-.drop_container_alt span{
+.linksHover{
     display: flex;
     margin-right: 350px;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
     padding: 8px 11px;
+    color: black;
     width: 185px;
     cursor: pointer;
     background: rgba(196, 196, 196, 0.61);
 }
 
-.drop_container_alt span i{
+.linksHover i{
     font-size: 20px;
 }
 
@@ -334,12 +338,13 @@ header{
 
 .drop_container_alt div:nth-child(2) span{
     display: flex;
-    width: 20px;
+    width: 30px;
     align-items: center;
     margin: 0px;
     justify-content: center;
     margin-right: 15px;
-    font-size: 21px;
+    font-size: 18px;
+    background: rgba(196, 196, 196, 0.61);
     cursor: pointer;
     font-weight: 500;
 }
@@ -1355,12 +1360,12 @@ footer{
 
 @media screen and (max-width: 1200px){
 
-    .actor_inner span{
+    .actor_inner a{
         width: 180px;
         font-size: 15px;
     }
     
-    .actor_inner span i{
+    .actor_inner a i{
         margin-top: 5px;
         font-size: 18px;
     }
@@ -1377,19 +1382,19 @@ footer{
         font-size: 60px;
     }
 
-    .drop_container_alt span{
+    .linksHover{
         margin-right: 150px;
     }
 }
 
 @media screen and (max-width: 800px){
 
-    .actor_inner span{
+    .actor_inner a{
         width: 160px;
         font-size: 14px;
     }
     
-    .actor_inner span i{
+    .actor_inner a i{
         font-size: 17px;
     }
 
@@ -1397,7 +1402,7 @@ footer{
         justify-content: space-between;
     }
 
-    .drop_container_alt span{
+    .linksHover{
         padding: 8px 11px;
         width: 180px;
         font-size: 16px;
@@ -1405,7 +1410,7 @@ footer{
     }
     
     .drop_container_alt div:nth-child(2) span{
-        width: 10px;
+        width: 30px;
         font-size: 17px;
     }
 }
@@ -1433,6 +1438,10 @@ footer{
         order: 1;
         margin: 0px;
     }   
+
+    .drop_container_alt div:nth-child(2) span{
+        padding: 7px 0;
+    }
 }
 
 @media screen and (max-width: 420px){
