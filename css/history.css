@@ -411,9 +411,9 @@ header{
     font-size: 20px;
 }
 
-.activeDropSpan{
-    color: white !important;
-    background: #0C184D !important;
+.drop_container_alt div:nth-child(2) span:hover{
+    background: #0C184D;
+    color: white;
 }
 
 .drop_container_alt div:nth-child(2) span{
@@ -425,6 +425,7 @@ header{
     margin-right: 15px;
     font-size: 21px;
     cursor: pointer;
+    transition: .3s;
     font-weight: 500;
 }
 

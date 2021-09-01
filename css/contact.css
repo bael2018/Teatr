@@ -97,6 +97,17 @@ header{
     font-size: 18px;
 }
 
+.activeNavbar::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    background: white;
+    height: 1px;
+    width: 100% !important;
+    bottom: -6px;
+    transition: .3s;
+}
+
 .navbar_links span:nth-child(2) li a::before{
     content: "";
     position: absolute;

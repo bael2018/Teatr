@@ -331,15 +331,16 @@ header{
     font-size: 20px;
 }
 
-.activeDropSpan{
-    color: white !important;
-    background: #0C184D !important;
+.drop_container_alt div:nth-child(2) span:hover{
+    background: #0C184D;
+    color: white;
 }
 
 .drop_container_alt div:nth-child(2) span{
     display: flex;
     width: 30px;
     align-items: center;
+    transition: .3s;
     margin: 0px;
     justify-content: center;
     margin-right: 15px;

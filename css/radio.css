@@ -455,12 +455,13 @@ main{
     background: #E7E7E7;
     margin: 0 5px;
     cursor: pointer;
+    transition: .3s;
     padding: 9px;
 }
 
-.main_footer_active{
-    color: white !important;
-    background: #1D2D6E !important;
+.main_footer div span:hover{
+    color: white ;
+    background: #1D2D6E ;
 }
 
 /* footer */
