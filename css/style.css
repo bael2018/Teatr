@@ -328,6 +328,7 @@ header::before{
 main{
     padding-top: 50px;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* main_title */
@@ -519,6 +520,7 @@ main{
 }
 
 /* pieces_block */
+
 
 .pieces_block{
     width: 100%;

@@ -295,6 +295,7 @@ header{
 
 main{
     background: #0C184D;
+    overflow-x: hidden;
     padding: 70px 0;
 }
 
