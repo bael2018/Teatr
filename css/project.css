@@ -303,6 +303,10 @@ header{
 
 /* main */
 
+main{
+    overflow-x: hidden;
+}
+
 .actor_inner{
     width: 85%;
     margin: 50px auto;

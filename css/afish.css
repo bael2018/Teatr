@@ -325,6 +325,7 @@ main{
 main{ 
     padding-top: 50px;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* info_container */

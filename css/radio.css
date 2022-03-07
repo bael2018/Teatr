@@ -279,6 +279,7 @@ header{
 main{
     background: #0C184D;
     padding: 50px 0;
+    overflow-x: hidden;
 }
 
 .main_title{
